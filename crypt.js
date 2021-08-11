@@ -35,17 +35,17 @@ class Crypt
                         hashedData = hash.update(dataToHash, 'utf-8');
                         console.log(hashedData.digest('hex'));
                         break;
-                    case '--sha384': 
-                        dataToHash = suppliedParams[++i];
-						console.log(`"${dataToHash}" hashed with sha384:`);
-                        hash = crypto.createHash('sha384');
-                        hashedData = hash.update(dataToHash, 'utf-8');
-                        console.log(hashedData.digest('hex'));
-                        break;
                     case '--sha256': 
                         dataToHash = suppliedParams[++i];
 						console.log(`"${dataToHash}" hashed with sha256:`);
                         hash = crypto.createHash('sha256');
+                        hashedData = hash.update(dataToHash, 'utf-8');
+                        console.log(hashedData.digest('hex'));
+                        break;
+                    case '--sha384': 
+                        dataToHash = suppliedParams[++i];
+						console.log(`"${dataToHash}" hashed with sha384:`);
+                        hash = crypto.createHash('sha384');
                         hashedData = hash.update(dataToHash, 'utf-8');
                         console.log(hashedData.digest('hex'));
                         break;

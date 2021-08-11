@@ -1,0 +1,1 @@
+node crypt.js --md5 "CICCC" --sha1 "CICCC" --sha256 "CICCC" --sha384 "CICCC" --whirpool "CICCC" 
